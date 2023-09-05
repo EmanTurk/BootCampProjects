@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment Floating Layout</title>
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(176, 159, 159, 0.2);
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            float: left;
+            width: 70%;
+            margin-right: 5%;
+        }
+
+        .sidebar {
+            float: left;
+            width: 25%;
+            background-color: #eee;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            clear: both;
+            text-align: center;
+            background-color: #191515;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main, .sidebar {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>This is an Experiment</h1>
+            <h2>Let's see if I can do it</h2>
+        </div>
+        <div class="main">
+            <h1>Marketing Advises</h1>
+            <p>Knowing your target audience is the first step into making good content</p>
+            <h2>Studing Your Target audience</h2>
+            <p>As mentioned Above it's crucial in order to know what and when to publish your content</p>
+        </div>
+        <div class="sidebar">
+            <h3>Few Tips</h3>
+            <p>Do your research and give it a time to study everything about the company that you want to work for and know their target audience.</p>
+        </div>
+        <div class="footer">
+            &copy; 2023 Marketing Specialist 
+        </div>
+    </div>
+</body>
+</html>
