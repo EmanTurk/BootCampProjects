@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Exercise</title>
+    <style>
+        /* Center align content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif; 
+          
+            font-size: medium
+            font smaller;
+            background-color: #f0f0f0;
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Common button styles */
+        .button {
+            display: block;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        /* Flat buttons */
+        .flat {
+            background-color: #ffcccc;
+            color: #ff0066;
+        }
+
+        /* Round buttons */
+        .round {
+            background-color: #d9b3ff;
+            color: #6600cc;
+            border-radius: 50%;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        /* Flat ghost buttons */
+        .flat-ghost {
+            background-color: transparent;
+            border: 30px solid #ffcccc;
+            color: #ffcccc;
+        }
+
+        /* Round ghost buttons */
+        .round-ghost {
+            background-color: transparent;
+            border: 2px solid #d9b3ff;
+            color: #d9b3ff;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buttons Exercise</h1>
+    <button class="button flat">Submit</button>
+    <button class="button flat" style="font-size: 20px;">Submit</button>
+
+    <button class="button round">Submit</button>
+    <button class="button round" style="font-size: 20px;">Submit</button>
+
+    <button class="button flat-ghost">Submit</button>
+    <button class="button flat-ghost" style="font-size: 20px;">Submit</button>
+
+    <button class="button round-ghost">Submit</button>
+    <button class="button round-ghost" style="font-size: 20px;">Submit</button>
+</body>
+</html>
