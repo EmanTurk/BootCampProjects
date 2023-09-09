@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.1 Button Exercises</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 80px; 
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+            color: black; /* Set text color to black */
+        }
+
+        /* Add space between heading and buttons */
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Flat Design */
+        .flat-btn {
+            background-color: blue;
+            border-radius: 0; /* Square shape */
+        }
+
+        .flat-btn:hover {
+            background-color: #003366;
+        }
+
+        .flat-btn-lg {
+            padding: 20px 40px; /* Larger size */
+        }
+
+        .flat-btn-sm {
+            background-color: yellow;
+        }
+
+        .flat-btn-sm:hover {
+            background-color: #cccc00;
+        }
+
+        /* Round Design */
+        .round-btn {
+            background-color: green;
+            border-radius: 20px; 
+        }
+
+        .round-btn:hover {
+            background-color: #004d00;
+        }
+
+        .round-btn-lg {
+            padding: 20px 20px; 
+        }
+
+        .round-btn-sm {
+            background-color: red;
+            border-radius: 20px; 
+        }
+
+        .round-btn-sm:hover {
+            background-color: #cc0000;
+        }
+
+        /* Flat Ghost Design */
+        .flat-ghost-btn {
+            background-color: white;
+            border: 2px solid orange;
+            border-radius: 0; 
+        }
+
+        .flat-ghost-btn:hover {
+            background-color: orange;
+        }
+
+        .flat-ghost-btn-lg {
+            padding: 20px 20px; 
+        }
+
+        .flat-ghost-btn-sm {
+            background-color: white;
+            border: 2px solid pink;
+            border-radius: 0; 
+        }
+
+        .flat-ghost-btn-sm:hover {
+            background-color: pink;
+        }
+
+        /* Round Ghost Design */
+        .round-ghost-btn {
+            background-color: white;
+            border: 2px solid yellow;
+            border-radius: 20px; 
+        }
+
+        .round-ghost-btn:hover {
+            background-color: yellow;
+        }
+
+        .round-ghost-btn-lg {
+            padding: 20px 20px; 
+        }
+
+        .round-ghost-btn-sm {
+            background-color: white;
+            border: 2px solid aquamarine;
+            border-radius: 20px; 
+        }
+
+        .round-ghost-btn-sm:hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <h2>Flat</h2>
+        <button class="btn flat-btn flat-btn-lg">Register</button>
+        <button class="btn flat-btn-sm">Submit</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="button-container">
+        <h2>Round</h2>
+        <button class="btn round-btn round-btn-lg">Register</button>
+        <button class="btn round-btn-sm">Submit</button>
+    </div>
+<br>
+<br>
+    <div class="button-container">
+        <h2>Flat Ghost</h2>
+        <button class="btn flat-ghost-btn flat-ghost-btn-lg">Register</button>
+        <button class="btn flat-ghost-btn-sm">Submit</button>
+    </div>
+<br>
+<br>
+    <div class="button-container">
+        <h2>Round Ghost</h2>
+        <button class="btn round-ghost-btn round-ghost-btn-lg">Register</button>
+        <button class="btn round-ghost-btn-sm">Submit</button>
+    </div>
+</body>
+</html>
