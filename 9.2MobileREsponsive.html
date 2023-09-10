@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Columns</title>
+    <style>
+        
+        body, h1 {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+ 
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+        }
+
+        /* Style for each column */
+        .column {
+            flex: 1; /* Equal width for all columns */
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #080101;
+            margin: 5px;
+            border-color: rgb(0, 0, 0);
+            background: linear-gradient(pink, white);
+            
+        }
+
+    
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>First Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima rerum porro in. Libero magni porro eligendi laborum quasi accusamus. ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="column">
+            <h1> Second Column</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat nulla assumenda explicabo tempora consequuntur animi numquam rerum velit autem! ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="column">
+            <h1>Third Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni qui quidem quia modi eum sint iure accusantium fugiat aperiam dolores. ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="column">
+            <h1>Fourth Column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti eum impedit quis dolores et, sapiente ad ex! Molestiae, ipsa? ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
