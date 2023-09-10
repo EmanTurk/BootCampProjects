@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eman's Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: flex-start; 
+            height: 100vh; 
+            margin: 0; 
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1 {
+            font-family: cursive;
+            font-size: 18px;
+        }
+
+        p {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            width: 100%;
+        }
+
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        .navbar-links {
+            padding-right: 20px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            color: #ffb6c1;
+        }
+
+        .social-card {
+            border: 3px solid #c3bbbb;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button a {
+            color: rgb(216, 141, 249);
+            padding: 20px;
+            text-decoration: none;
+            border: 2px dashed;
+            border-radius: 10px;
+        }
+
+        button:hover a {
+            background-color: black;
+            color: rgb(216, 141, 249);
+            border-color: transparent;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-links {
+                margin-top: 20px;
+                margin-right: 0;
+            }
+
+            .navbar-brand {
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+align-items: center;            }
+
+            .box {
+                padding: 20px 0;
+            }
+
+            p {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">ExT</div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+    <h1>Hey You, My Name is Eman</h1>
+    <img src="/IMG_4920.jpg" style="width: 150px; display: block; margin: 0 auto;" alt="My Picture" />
+    <div class="box">
+        <h4>Welcome to my page, I'm a full Stack developer and designer. Experienced content writer, well you know a little bit of everything!</h4>
+        <img src="/face-smile-solid.svg" style="width: 20px; display: block; margin: 0 auto;" alt=""/>
+    </div>
+    <div class="box">
+        <p>Well, you know what they say, <span style="color: rgb(0, 0, 0); background-color: rgb(227, 194, 255);">introducing yourself is not easy</span>, it feels a bit cheesy so... let's try to add some random facts! It's better anyway than the dummy content, right? <span style="background-color: rgb(211, 233, 247);">Hmmm, okay, okay so... roses are red, sky is blue, is that even true?</span>  No? Okay, okay, boring but you're still reading... okay, dokay... I'm out of words. Anyway, click on the link down below and you'll thank me later; it's gonna change your life!</p>
+    </div>
+    <div class="social-card">
+        <p>Check out my social media links below:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/emanturkman/">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/eman.turkman/">Facebook</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <button><a href="https://www.imdb.com/title/tt2359704/">You Should Watch This</a></button>
+</body>
+</html>
