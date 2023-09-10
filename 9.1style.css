@@ -1,0 +1,58 @@
+#body{
+
+    background-color: rgb(251, 241, 222);
+   text-align: center;
+   padding-top: 40px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#main1{
+    font-size: 22px; 
+    color: rgba(144, 133, 10, 0.829);
+}
+
+#main2{
+    font-size: 24px; 
+    color: rgb(100, 56, 2);
+
+}
+
+#main3{
+
+    font-size: 20px; 
+    
+}
+
+@media (max-width: 600px) {
+    #main1 {
+        font-size: 32px; /* Increase font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 400px) {
+    #main1 {
+        font-size: 24px; /* Increase font size further for very small screens */
+    }
+}
+
+
+@media (max-width: 600px) {
+    #main2 {
+        font-size: 32px; /* Increase font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 400px) {
+    #main3 {
+        font-size: 24px; /* Increase font size further for very small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    #main3{ 
+        font-size: 24px;
+    }
+
+}
