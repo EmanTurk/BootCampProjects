@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11.3 Flexbox Example</title>
+    <title>11.4 Flexbox Example</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content:end;
-            align-items:end;
+            justify-content: flex-start; /* Align content to the left side */
+            align-items: center;
             height: 100vh;
-           }
+        }
 
-           .div-contanier{
-
+        .div-container {
             display: flex;
-            flex-wrap: wrap;
-           
-           }
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left side */
+        }
 
         .box {
             width: 100px;
             height: 100px;
+            margin: 20px 0; /* Add vertical margin for spacing between boxes */
         }
 
         .red {
@@ -40,11 +40,10 @@
     </style>
 </head>
 <body>
-    <div class="div-contanier">
-    <div class="box red"></div>
-    <div class="box green"></div>
-    <div class="box blue"></div>
-
-</div>
+    <div class="div-container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
 </body>
 </html>
